@@ -1,3 +1,4 @@
+import './globals.css';
 export const metadata = {
   title: 'NoeulTech',
   description: '자동화 장비 설계·제작·납품 — 노을테크',
