@@ -1,16 +1,15 @@
-import { useState } from "react";
+'use client';
+import { useState } from 'react';
 
 // ✅ NoeulTech 홈페이지 v1 (단일 파일 React)
 // Tailwind 기반. 색상 컨셉: 노을(주황-보라 그라데이션)
 // 섹션: Hero, 서비스, 산업/레퍼런스, 표준제품, 공정/방법론, 고객사례, 문의
 // 배포: Vercel/Netlify/Pages 등 정적 배포 가능 (다음 메시지에 안내)
 
-export default function HomePage() {
+export default function Page() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
+  // ...
+}
   const mailtoHref = `mailto:contact@noeultech.co.kr?subject=%5B홈페이지문의%5D%20${encodeURIComponent(
     name || "문의"
   )}&body=${encodeURIComponent(`이름: ${name}\n이메일: ${email}\n내용: ${message}`)}`;
